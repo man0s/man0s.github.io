@@ -4,11 +4,10 @@ date:   2017-12-01 18:36:23
 categories: [Web Development]
 tags: [RGBit, HTML, CSS, JavaScript]
 ---
-<a href="https://www.katefidis.ga/RGBit/"><img src="https://www.katefidis.ga/images/posts/RGBit.png"></img></a>
+<p>RGBit! is a simple game that helps you guess the right color for the RGB code that shows up!</p>
 
-I've been using Photoshop and Color Picker(ST3 Plugin) for a while, so in order to learn the decimal
-representation of Colors in CSS i created RGBit!
-RGBit! is a simple game that helps you guess the right color for the RGB code that shows up!
-Each parameter (Red, Green, and Blue) defines the intensity of the color as an integer between 0 and 255.
+<p><a href="https://www.katefidis.ga/RGBit/"><img src="https://www.katefidis.ga/images/posts/RGBit.png"></img></a></p>
 
-You can test it out <a href="https://www.katefidis.ga/RGBit/">here</a>!
+<p>Each parameter (Red, Green, and Blue) defines the intensity of the color as an integer between 0 and 255.</p>
+
+<p>You can test it out <a href="https://www.katefidis.ga/RGBit/">here</a>!</p>
