@@ -1,7 +1,6 @@
 ---
 title:  "RGBit! - A Color Challenge"
 description: "A simple game that helps you guess the right color for the RGB code that shows up!"
-tagline: "A simple game that helps you guess the right color for the RGB code that shows up!"
 date:   2017-12-01 18:36:23
 categories: [Web Development]
 tags: [RGBit, HTML, CSS, JavaScript]
