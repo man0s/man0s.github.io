@@ -14,7 +14,39 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
- 		<link rel="shortcut icon" href="images/favicons/favicon.gif">
+ 		<script type="text/javascript">
+ 			var $parent = document.createElement("div");
+		    var $gif = document.createElement("img");
+		    var $favicon = document.createElement("link");
+
+			// Required for CORS
+			$gif.crossOrigin = "anonymous";
+
+			$gif.src = "https://www.katefidis.ga/images/favicons/favicon.gif";
+
+			$favicon.rel = "icon";
+
+			// JS Fiddle always displays the result in an <iframe>,
+			// so we have to add the favicon to the parent window
+			window.parent.document.head.appendChild($favicon);
+
+			// libgif.js requires the GIF <img> tag to have a parent
+			$parent.appendChild($gif);
+
+			var supergif = new SuperGif({gif: $gif});
+			var $canvas;
+
+			supergif.load(()=> {
+				$canvas = supergif.get_canvas();
+			  updateFavicon();
+			});
+
+			function updateFavicon() {
+				$favicon.href = $canvas.toDataURL();
+			  window.requestAnimationFrame(updateFavicon);
+			}
+
+ 		</script>
 	</head>
 	<body class="is-loading">
 
