@@ -1,98 +1,36 @@
-<!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Emmanouil Katefidis</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
- 		<script type="text/javascript">
- 			var $parent = document.createElement("div");
-		    var $gif = document.createElement("img");
-		    var $favicon = document.createElement("link");
-
-			// Required for CORS
-			$gif.crossOrigin = "anonymous";
-
-			$gif.src = "images/favicons/favicon.gif";
-
-			$favicon.rel = "icon";
-
-			// JS Fiddle always displays the result in an <iframe>,
-			// so we have to add the favicon to the parent window
-			window.parent.document.head.appendChild($favicon);
-
-			// libgif.js requires the GIF <img> tag to have a parent
-			$parent.appendChild($gif);
-
-			var supergif = new SuperGif({gif: $gif});
-			var $canvas;
-
-			supergif.load(()=> {
-				$canvas = supergif.get_canvas();
-			  updateFavicon();
-			});
-
-			function updateFavicon() {
-				$favicon.href = $canvas.toDataURL();
-			  window.requestAnimationFrame(updateFavicon);
-			}
-
- 		</script>
-	</head>
-	<body class="is-loading">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/avatar.jpg" /></span>
-							<h1>Emmanouil Katefidis</h1>
-							<p>Undergraduate Student
-								<br>
-									<a href="https://www.ceid.upatras.gr">Computer Engineering & Informatics Dept.</a>
-								<br>
-									<a href="https://www.upatras.gr">University of Patras</a>
-							</p>
-						</header>
-						<hr />
-						<footer>
-							<ul class="icons">
-								<li><a href="https://www.linkedin.com/in/man0s" class="fa-linkedin">Linkedin</a></li>
-								<li><a href="https://www.github.com/man0s" class="fa-github">Github</a></li>
-								<li><a href="https://twitter.com/man0ssl" class="fa-twitter">Twitter</a></li>
-								<li><a href="mailto:katefidis@ceid.upatras.gr" class="fa-envelope">E-Mail</a></li>
-							</ul>
-						</footer>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy;2010-<script type="text/javascript">document.write(new Date().getFullYear() )</script> Emmanouil Katefidis</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="assets/img/favicon.gif">
+    <title>emmanouil katefidis</title>
+    <link rel="icon" type="image/gif" href="assets/img/favicon.gif">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="container">
+    	<p class="avatar"><img src="assets/img/avatar.jpg"></p>
+    	<p class="greetings">Hi, I'm Emmanouil Katefidis<span>.</span></p><br>
+    	<p class="caption">Undergraduate Student of <a href="https://www.ceid.upatras.gr">Computer Engineering & Informatics Department</a> at <a href="https://www.upatras.gr">University of Patras</a>.</p>
+    	<ul style="text-align: center">
+    		<li style="float: left">
+    			<a href="mailto:katefidis@ceid.upatras.gr"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+    		</li>
+			<li align="center">
+				<a href="https://www.github.com/man0s"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+			</li>
+			<li style="float: right">
+				<a href="https://www.linkedin.com/in/man0s"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+			</li>
+    	</ul>
+    </div>
+  </body>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"> </script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
 </html>

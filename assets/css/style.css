@@ -1,0 +1,109 @@
+body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100vh;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Rubik, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+body #particles-js {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #ffffff;
+    background: linear-gradient(60deg, rgba(128, 82, 189, 0.5) 5%, rgba(56, 243, 159, 0.5));
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 420px;
+    min-height: 200px;
+    padding: 10px 40px;
+    border: 1px solid rgba(69, 99, 99, 0.1);
+    border-radius: 3px;
+    background-color: rgba(80, 80, 80, 0.1);
+    z-index: 50;
+    box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2); /*Adds shadow*/
+}
+
+.container .avatar {
+    text-align: center
+}
+
+.container .greetings {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0
+}
+
+.container .greetings span {
+    color: #699
+}
+
+.container .caption {
+    font-size: 18px;
+    line-height: 1.5em
+}
+
+.container ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0
+}
+
+.container ul li {
+    display: inline-block;
+    margin-right: 10px;
+    opacity: .7
+}
+
+.container ul li:hover {
+    opacity: 1
+}
+
+@media (max-width:400px) {
+    body {
+        background: #fff
+    }
+}
