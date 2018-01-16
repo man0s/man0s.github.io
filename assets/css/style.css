@@ -118,7 +118,7 @@ a:hover {
 	position: absolute;
 	width: 130%;
 	height: 50%;
-	background: rgba(23, 23, 23, 1);
+	background-color: rgba(23, 23, 23, 1);
 	left: -15%;
 	-webkit-transition: all 2s ease 0.5s;
 	-moz-transition: all 2s ease 0.5s;
