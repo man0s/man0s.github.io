@@ -109,7 +109,7 @@ a:hover {
 	top: 0;
 	left: 0;
 	text-align: center;
-	z-index: 1053;
+	z-index: 999999;
 }
 .preloader .logo_loader{margin-bottom: 20px;}
 .preloader:before, .preloader:after {
