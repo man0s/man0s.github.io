@@ -1,11 +1,3 @@
-$(window).on("load",function(){
-  // PAGE IS FULLY LOADED  
-  // FADE OUT YOUR OVERLAYING DIV
-  $('.inner').fadeOut(1500,"linear",function(){
-      $('.preloader').fadeOut(); 
-  });
-});
-
 var partJson = {
 	  "particles": {
 	    "number": {
@@ -117,4 +109,13 @@ var partJson = {
 	  "retina_detect": true
 };
 var jsonUri = "data:text/plain;base64,"+window.btoa(JSON.stringify(partJson));
+
+$(window).on("load",function(){
+  // PAGE IS FULLY LOADED  
+  // FADE OUT YOUR OVERLAYING DIV
+  $('.inner').fadeOut(1500,"linear",function(){
+      $('.preloader').fadeOut(); 
+  });
+});
+
 particlesJS.load('particles-js', jsonUri, function(){});
