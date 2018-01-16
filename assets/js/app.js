@@ -1,3 +1,11 @@
+$(window).on("load",function(){
+  // PAGE IS FULLY LOADED  
+  // FADE OUT YOUR OVERLAYING DIV
+  $('.inner').fadeOut(1500,"linear",function(){
+      $('.preloader').fadeOut(); 
+  });
+});
+
 var partJson = {
 	  "particles": {
 	    "number": {
