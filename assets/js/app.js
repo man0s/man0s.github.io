@@ -1,7 +1,7 @@
 var partJson = {
 	  "particles": {
 	    "number": {
-	      "value": 80,
+	      "value": 60,
 	      "density": {
 	        "enable": true,
 	        "value_area": 800
@@ -109,4 +109,13 @@ var partJson = {
 	  "retina_detect": true
 };
 var jsonUri = "data:text/plain;base64,"+window.btoa(JSON.stringify(partJson));
+
+$(window).on("load",function(){
+  // PAGE IS FULLY LOADED  
+  // FADE OUT YOUR OVERLAYING DIV
+  $('.inner').fadeOut(1500,"linear",function(){
+      $('.preloader').fadeOut(); 
+  });
+});
+
 particlesJS.load('particles-js', jsonUri, function(){});
