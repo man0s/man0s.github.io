@@ -67,7 +67,9 @@ a:hover {
 }
 
 .container .avatar {
-    text-align: center
+	text-align: center;
+	height: 170px;
+	width: 170px
 }
 
 .container .greetings {
