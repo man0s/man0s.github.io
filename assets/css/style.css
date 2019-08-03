@@ -68,6 +68,9 @@ a:hover {
 
 .container .avatar {
 	text-align: center;
+}
+
+.avatar img {
 	height: 170px;
 	width: 170px
 }
